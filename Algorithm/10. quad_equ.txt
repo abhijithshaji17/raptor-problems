@@ -1,0 +1,22 @@
+//Quadratic equations 
+
+algorithm quad_equ():
+    read a 
+    read b 
+    read c 
+    disc = b*b - 4*a*c 
+
+    if(disc < 0):
+        print "Complex roots!"     // No real solution to the given quadratic equation 
+    else:
+        if(disc > 0):
+            rootA = ((-1)*b + sqrt(disc))/(2*a)      
+            rootB = ((-1)*b - sqrt(disc))/(2*a)
+            
+            print rootA            // Two distinct roots
+            print rootB            // Two distinct roots
+        else:
+            root = ((-1)*b)/(2*a)
+
+            print root             // Same roots
+            print root             // Same roots

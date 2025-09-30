@@ -1,0 +1,21 @@
+// Check whether a number is angstrom or not
+
+algorithm numreverse():
+    read num
+    temporary = num
+    ang = 0
+
+    while(num > 0):
+        unitdigit = (num % 10)                        // Stores the last digit of num
+        ang = ang + (unitdigit * unitdigit * unitdigit) // Adds the cube of unitdigit to ang 
+        num = floor(num / 10)                             // Floor divide number by 10
+    
+    if (ang == temporary):
+        print "The number is an angstrom number!"
+    else:
+        print "The number is not an angstrom number!"
+
+
+
+    
+

@@ -1,0 +1,18 @@
+// Reverse of number
+
+algorithm numreverse():
+    read num
+    reverse = 0     // Will store the reversed number after the loop finishes
+
+    while(num > 0):
+        reverse = reverse + (num % 10)          // Adds the last digit of num to reversed
+
+
+        reverse = reverse * 10                  // Multiply reverse by 10
+    
+        num = floor(num / 10)                   // Floor division of num by 10 
+        // We do this so that the last digits in num will be the first digits in reversed
+
+    print reverse
+    
+

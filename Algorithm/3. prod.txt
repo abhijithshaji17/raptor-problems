@@ -1,0 +1,7 @@
+//Product of a * b
+
+algorithm prod() :
+    read a      
+    read b 
+    c = a * b 
+    print c

@@ -1,0 +1,7 @@
+//Area of circle
+
+algorithm circle_area():
+    pi = 3.1415926
+    read radius
+    area = pi * radius * radius // We have to multiply radius twice because computers don't know how to square numbers themselves
+    print area 

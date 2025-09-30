@@ -1,0 +1,7 @@
+//Quotient of a / b
+
+algorithm div() :
+    read a      
+    read b 
+    c = a / b 
+    print c

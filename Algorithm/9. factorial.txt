@@ -1,0 +1,10 @@
+//Factorial
+
+algorithm factorial():
+    read n 
+    fact = 1
+    while n>0:
+        fact = fact * n        // Multiply fact with n 
+        n = n - 1              // Subtract 1 from n 
+        // This loop will continue till n decreases to 0
+    print fact

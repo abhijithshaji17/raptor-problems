@@ -1,0 +1,7 @@
+//Difference of a - b
+
+algorithm diff() :
+    read a      
+    read b 
+    c = a - b 
+    print c

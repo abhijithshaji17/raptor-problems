@@ -1,0 +1,11 @@
+// Check whether a number is positive, negative or zero
+
+algorithm poszeroneg():
+    read num 
+    if(num < 0):
+        print "Number is negative!"
+    else
+        if(num > 0):
+            print "Number is postive!" 
+        else:
+            print "Number is zero!"     // If it isn't positive or negative its surely zero 

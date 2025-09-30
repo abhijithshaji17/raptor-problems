@@ -1,0 +1,9 @@
+// X divisible by y check
+
+algorithm divisibility():
+    read x 
+    read y 
+    if(x%y == 0):
+        print "X is divisible by Y!"
+    else:
+        print "X is not divisible by Y!"

@@ -1,0 +1,24 @@
+// Read list of numbers from user until a zero is entered and calculate avg. of even numbers excluding zero.
+
+algorithm avgeven():
+    zero_break = 0              // We will change its value the moment zero is entered
+
+    evensum = 0                 // To store the sum of even numbers to find average
+    count = 0                   // To keep track of how many numbers are entered to find the average
+
+    while zero_break == 0:      // Loop will continue until zero_break changes
+        read num
+        if(num == 0):
+            zero_break = 1      // Set zero_break to 1 to break out of the loop
+        else:
+            if (num%2 == 0):    // If num is even
+                evensum = evensum + num
+                count = count + 1
+    
+    if(count == 0):
+        count = 1               // This is for the rare case that no numbers are entered so that we won't get a division by zero error
+
+
+    average = evensum / count 
+    print average
+

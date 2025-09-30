@@ -1,0 +1,7 @@
+//Swapping a and b
+
+algorithm two_swap(a,b):
+    temporary = b              // Need temporary variable to store the value of b so that we won't lose it after we change b's value to a 
+    b = a                      // Changing b's value to a's value 
+    a = temporary              // Changing a's value to the temporary variable's value 
+    return a,b                 // Return a and b (We are not printing it here)

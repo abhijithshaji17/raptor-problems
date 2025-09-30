@@ -1,0 +1,12 @@
+//Fibonacci series
+
+algorithm fibonacci():
+    read n
+    a = 0
+    b = 1
+    while n > 0:
+        print a                   // Output the value of a
+        c = a + b                 
+        a = b                     // Change a to b
+        b = c                     // Change b to the sum of a + b
+        n = n - 1                 // To print only exactly n numbers

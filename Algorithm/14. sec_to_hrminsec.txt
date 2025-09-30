@@ -1,0 +1,10 @@
+// Time in sec. To hrs, min and sec.
+
+algorithm sec_to_hrminsec():
+    read totalseconds
+    hours   = floor(totalseconds / 3600)
+    minutes = floor((totalseconds % 3600) / 60)
+    seconds = totalseconds % 60
+
+    print hours + ":" + minutes + ":" + seconds
+    

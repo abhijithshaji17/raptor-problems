@@ -1,0 +1,8 @@
+//Check whether given number is 2 digit or not
+
+algorithm twodigcheck():
+    read num 
+    if(num <= 99 and num >= 10):            // We know that every two digit number is between 10 and 99
+        print "Number is two digit!"
+    else:
+        print "Number is not two digit..."

@@ -1,0 +1,8 @@
+//Average of a, b and c
+
+algorithm average_three() :
+    read a
+    read b 
+    read c 
+    avg = (a+b+c)/3  //Find the sum of a,b, and c first, then divide the sum by 3
+    print avg 

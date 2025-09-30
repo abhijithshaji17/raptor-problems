@@ -1,0 +1,7 @@
+//Area Of rectangle
+
+algorthm rectangle_area():
+    read length
+    read width
+    area = length * width 
+    print area 

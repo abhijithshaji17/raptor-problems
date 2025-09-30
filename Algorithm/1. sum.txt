@@ -1,0 +1,7 @@
+//Sum of a + b
+
+algorithm sum() :
+    read a      
+    read b 
+    c = a + b 
+    print c
