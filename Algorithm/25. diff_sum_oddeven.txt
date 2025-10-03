@@ -1,0 +1,19 @@
+// Difference b/w sums of odd and even numbers in a set of n numbers
+
+algorithm diff_sum_oddeven():
+    read n              // Number of numbers to read 
+    sumeven = 0
+    sumodd = 0
+    while(n>0) : 
+        read number
+        if(number%2 == 0) :
+            sumeven = sumeven + number
+        else :
+            sumodd = sumodd + number
+        n = n - 1
+    difference = sumodd - sumeven
+    print difference
+
+
+        
+    

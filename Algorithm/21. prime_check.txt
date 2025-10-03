@@ -1,0 +1,31 @@
+// Prime number check 
+
+algorithm prime_check():
+    read num 
+    if(num <= 1):                 // Check if its not positive
+        print ""Number is not Prime"
+    else:
+        if num(<= 3):             // If it is positive, check if its less than 3
+            print "Number is prime!"
+        else:
+            if(num % 2 == 0 or num % 3 == 0):
+                print "Number is composite!"
+            else:
+                
+                factor = 5        // We will now be checking every number from 5 upto the sqrt of that number to find if it has a factor
+                breaker = 0       // Used to break out of the loop when we find a factor
+
+                while(factor <= sqrt(num) and breaker == 0):
+                    if (num % factor == 0):
+                        print "Number is composite!"
+                        breaker = 1
+                    else:
+                        factor = factor + 2
+
+                if(breaker == 0):
+                    print "Number is prime!"
+                
+// If you've checked all numbers upto the sqrt of a number and found no factors 
+//   then you can be 100% sure that the number has no factors (ie. it is prime)
+// It's because if it were to have a factor greater than its sqrt, then its co-factor would be always less than its sqrt 
+// But since we've already checked for all numbers less than its sqrt

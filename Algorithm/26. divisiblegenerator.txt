@@ -1,0 +1,20 @@
+// To find numbers b/w 100 & 200 that are divisible by 3, but not divisible by 4
+
+algorithm divisible_generator():
+    n = 100
+    while(n<200):
+        if(n%3 == 0 and n%4 != 0):
+            print n 
+        n = n + 1
+
+
+
+// Extra : 
+// For more efficiency,  you can selectively check multiples of 3 to make the program run 3 times faster while also printing all the correct numbers
+
+algorithm optimized_divisible_generator():
+    n = 102           // First multiple of 3 greater than 100
+    while(n < 200):
+        if(n%4 != 0): // Now you don't have to check if its divisible by 3. Because you know it will always be divisible by 3
+            print n 
+        n = n + 3

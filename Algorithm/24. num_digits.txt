@@ -1,0 +1,14 @@
+// Count digits of a positive integer
+
+algorithm num_digits():
+    read num
+    digits = 0
+
+    while(num > 0):
+        digits = digits + 1
+    
+        num = floor(num / 10)                   // Floor division of num by 10 
+
+    print digits
+    
+

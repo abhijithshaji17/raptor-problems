@@ -1,0 +1,29 @@
+// To determine whether a triangle is a right angle triangle using its side lengths as inputs
+
+algorithm right_triangle_check():
+    read a
+    read b
+    read c 
+    if(c > a and c > b):
+        hyp = (a*a) + (b*b)
+        if(hyp == (c*c)):
+            print "Triangle is a right angle triangle!"
+        else:
+            print "Triangle is not a right angle triangle!"
+    else:
+        if(b > a and b > c):
+            hyp = (a*a) + (c*c)
+            if(hyp == (b*b)):
+                print "Triangle is a right angle triangle!"
+            else:
+                print "Triangle is not a right angle triangle!"
+        else:
+            if(a > b and a > c):
+                hyp = (b*b) + (c*c)
+                if(hyp == (a*a)):
+                    print "Triangle is a right angle triangle!"
+                else:
+                    print "Triangle is not a right angle triangle!"
+            else:
+                //We would reach here only if a = b = c, so 
+                print "Triangle is an equilateral triangle"
