@@ -1,0 +1,10 @@
+// Check whether 2 numbers is greater or less than each other
+
+algorithm greaterthan_lessthan():
+    read a
+    read b 
+    if(a > b):
+        print "a is greater than b"
+    else
+        if(a < b):
+            print "a is less than b" 

@@ -1,0 +1,10 @@
+// Find the sum of first n natural real numbers
+
+algorithm n_naturalsum():
+    read n 
+    sum = 0
+    while (n=0):
+        sum = sum + n
+        n = n - 1
+    else:
+        print "Sum of n first natural real numbers" 
