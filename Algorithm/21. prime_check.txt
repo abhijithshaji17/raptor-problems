@@ -2,10 +2,10 @@
 
 algorithm prime_check():
     read num 
-    if(num <= 1):                 // Check if its not positive
-        print ""Number is not Prime"
+    if(num <= 1):                 // Check if it's not positive
+        print "Number is not Prime"
     else:
-        if num(<= 3):             // If it is positive, check if its less than 3
+        if (num <= 3):             // If it is positive, check if it's less than 3
             print "Number is prime!"
         else:
             if(num % 2 == 0 or num % 3 == 0):
