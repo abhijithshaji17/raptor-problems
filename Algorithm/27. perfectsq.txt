@@ -1,0 +1,15 @@
+// Check for perfect square
+
+algorithm perfectsq() :
+    read num
+     root = sqrt(num) 
+     integer = floor(root)
+
+  if(integer*integer = num):  
+       print "Given number is a perfect square"
+
+  else: 
+       print "Given number is not a perfect square"
+
+
+

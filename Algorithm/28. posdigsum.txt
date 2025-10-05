@@ -1,0 +1,20 @@
+// Sum of positive digits in a number
+
+algorithm posdigsum() :
+    read N
+
+   if(N < 0):  
+       print "error: Input positive integer"
+  else: 
+       sum = 0
+
+     while(N > 0) :
+               digit = N % 10   //Get last digit
+               sum = sum + digit  //Add the digit to total sum
+               N = floor(N/10)  //Remove the last digit (integer division)
+           
+   print "sum"
+  
+    
+
+
