@@ -13,7 +13,7 @@ algorithm posdigsum() :
                sum = sum + digit  //Add the digit to total sum
                N = floor(N/10)  //Remove the last digit (integer division)
            
-   print "sum"
+  print "sum"
   
     
 
