@@ -1,0 +1,12 @@
+read n
+
+i = 0
+j = 0
+
+while( i < n ) :
+    j = 0
+    while(j < i) :
+        print("*")  // no line end
+        j = j + 1
+    print("new line")
+    i = i + 1
